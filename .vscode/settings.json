@@ -1,0 +1,10 @@
+{
+  "prettier.configPath": "",
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.withNodeModules": true,
+  "eslint.nodeEnv": "",
+  "eslint.nodePath": "./node_modules/eslint",
+  "eslint.useFlatConfig": false,
+  "prettier.useEditorConfig": false,
+  "editor.formatOnSave": true
+}
