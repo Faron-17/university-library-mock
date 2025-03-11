@@ -1,5 +1,5 @@
 interface Book {
-  id: string;
+  id: number;
   title: string;
   author: string;
   genre: string;
@@ -11,5 +11,4 @@ interface Book {
   coverUrl: string;
   videoUrl: string;
   summary: string;
-  createdAt: Date | null;
 }
