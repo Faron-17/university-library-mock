@@ -36,7 +36,7 @@ function BookOverview(
           </p>
         </div>
         <p className='book-description'>{description}</p>
-        <Button className='book-overview-btn'>
+        <Button className='book-overview_btn'>
           <Image
             src={bookIcon}
             alt="book"

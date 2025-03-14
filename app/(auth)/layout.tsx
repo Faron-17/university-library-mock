@@ -3,8 +3,13 @@ import React, { ReactNode } from 'react'
 
 import logo from '@/app/icons/logo.svg'
 import authIllustration from '@/app/images/auth-illustration.png'
+import { redirect } from 'next/navigation';
+import { auth } from '@/auth';
 
-function layout({ children } : { children: ReactNode }) {
+const layout = async ({ children } : { children: ReactNode }) => {
+  const session = await auth();
+  if(session) redirect("/")
+
   return (
     <main className='auth-container'>
       <section className='auth-form'>
