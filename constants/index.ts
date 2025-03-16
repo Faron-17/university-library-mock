@@ -11,29 +11,35 @@ export const navigationLinks = [
   },
 ];
 
+import home from '@/app/icons/admin/home.svg'
+import users from '@/app/icons/admin/users.svg'
+import book from '@/app/icons/admin/book.svg'
+import bookmark from '@/app/icons/admin/bookmark.svg'
+import user from '@/app/icons/admin/user.svg'
+
 export const adminSideBarLinks = [
   {
-    img: "/icons/admin/home.svg",
+    img: home,
     route: "/admin",
     text: "Home",
   },
   {
-    img: "/icons/admin/users.svg",
+    img: users,
     route: "/admin/users",
     text: "All Users",
   },
   {
-    img: "/icons/admin/book.svg",
+    img: book,
     route: "/admin/books",
     text: "All Books",
   },
   {
-    img: "/icons/admin/bookmark.svg",
+    img: bookmark,
     route: "/admin/borrow-records",
     text: "Borrow Records",
   },
   {
-    img: "/icons/admin/user.svg",
+    img: user,
     route: "/admin/account-requests",
     text: "Account Requests",
   },
