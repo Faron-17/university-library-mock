@@ -6,8 +6,12 @@ import bookIcon from '@/app/icons/book.svg'
 import { Button } from './ui/button'
 import BookCover from './BookCover'
 
+interface Props extends Book {
+  userId: string;
+}
+
 function BookOverview(
-  { title, author, genre, rating, totalCopies, availableCopies, description, coverColor, coverUrl }: Book) {
+  { title, author, genre, rating, totalCopies, availableCopies, description, coverColor, coverUrl }: Props) {
   return (
     <section className='book-overview'>
       <div className='flex flex-1 flex-col gap-5'>
